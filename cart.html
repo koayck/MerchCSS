@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title> Merchandise | CS Society USM </title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+        <body>
+            
+            <div id="overlay" class="overlay"></div>
+
+            <div id="navbar">
+
+                <a href="home.html"><img src="CS Society Logo.png" width = "68", height = "68" class="image"></a>
+
+                <h2 class="navtext", style="color:rgb(255, 255, 254);">
+                    <a style="text-decoration: none; color: white;" href="home.html">USM CS SOCIETY <br> MERCHANDISE</a>
+                </h2>
+
+                <button type="button" class="button"> CART
+                
+            
+                </button>
+    
+                <img src = "shop_cart_icon_157457.png" style="position:absolute; width: 22px; height: auto; right: 110px; top: 31px;">   
+    
+            </div>
+
+            <div class="square">
+                <h1 class="squaretext">We are not accepting new orders at this time.<br> Thank you for your support!</h1>            
+            </div>
+    
+            <img src="wrong.png" style="position:absolute; top:163px; right:62%; height:15px; width: 15px">
+
+            <h1 style="font-size: 30px; padding-top: 0.4cm; padding-left: 8cm;">
+                <u>Customer Information</u>
+            </h1>
+
+            <h1 style="font-size: 19px; padding-top: 0.4cm; padding-left: 8cm;">
+                Full Name
+            </h1>
+
+            <div class="form-name"></div>
+            
+            <h1 style="font-size: 19px; padding-top: 2.4cm; padding-left: 8cm;">
+                Matric Number
+            </h1>
+
+
+            <div class="form-matric"></div>
+
+            <h1 style="font-size: 19px; padding-top: 2.4cm; padding-left: 8cm;">
+                USM Email
+            </h1>
+
+            <div class="form-email"></div>
+
+            <h1 style="font-size: 19px; padding-top: 2.4cm; padding-left: 8cm;">
+                Contact Number
+            </h1>
+
+            <h1 style="position: absolute; top: 11.3cm; right: 13.8cm;font-size: 19px; padding-top: 2.4cm; padding-left: 8cm;">
+                Account number: 711490446634
+            </h1>
+
+            <h1 style="position: absolute; top: 12cm; right: 13cm;font-size: 19px; padding-top: 2.4cm; padding-left: 8cm;">
+                Accountholder name: Wong Wei Ze
+            </h1>
+
+            <h1 style="position: absolute; top: 12.8cm; right: 15.85cm;font-size: 19px; padding-top: 2.4cm; padding-left: 8cm;">
+                Bank name: Maybank
+            </h1>
+
+            <h1 style="position: absolute; top: 13.6cm; right: 12.5cm;font-size: 19px; padding-top: 2.4cm; padding-left: 8cm;">
+                Reference: CSMerch MATRIC_NUM
+            </h1>
+
+            <h1 style="position: absolute; top: 15.1cm; right: 11.6cm;font-size: 19px; padding-top: 2.4cm; padding-left: 8cm;">
+                Upload your <b>receipt</b> here (PDF or Image):
+            </h1>
+
+            <h1 style="position: absolute; top: 16.1cm; right: 12.4cm;font-size: 18px; padding-top: 2.4cm; padding-left: 8cm; color: lightgray;">
+                Drag & Drop your files or <u>Browse</u>
+            </h1>
+
+
+
+            <div id="popup" class="popup">
+
+                <img src="InCorrect-icon-in-sticker-style-on-transparent-background-PNG.png" style="height: 2.5cm; width: 2.5cm; position: absolute; top: 0.8cm; right: 5cm;">
+                <h2 style="padding-top: 3.2cm; padding-left: 2.7cm; font-size: 30px; color: rgb(82, 82, 82);">Your cart is empty</h2>
+                <p style="padding-left: 1.8cm; font-size: 18px;  color: rgb(82, 82, 82);">Please add items to cart before proceeding!</p>
+                <button onclick="closePopup()" style="height: 1.2cm; width: 1.6cm; position: absolute; top: 7.1cm;left: 5.4cm; border-color: rgb(211, 165, 255); border-radius: 8px; border-width: 3.6px; background-color: rgb(132, 100, 239); color: white;">OK</button>
+            </div>
+
+
+
+
+            <script>
+                // Function to open the pop-up on Page 2.
+                function openPopup() 
+                {
+                    const popup = document.getElementById("popup");
+                    const overlay = document.getElementById("overlay");
+                    popup.style.display = "block";
+                    overlay.style.display = "block";
+                }
+        
+                // Function to close the pop-up on Page 2.
+                function closePopup() 
+                {
+                    const popup = document.getElementById("popup");
+                    const overlay = document.getElementById("overlay");
+                    popup.style.display = "none";
+                    overlay.style.display = "none";
+                    window.location.href = "home.html"; // Redirect back to Page 1.
+                }
+
+                window.addEventListener("load", openPopup);
+            </script>
+
+
+
+            
+
+            
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+        </body>
